@@ -16,7 +16,7 @@ class Ball():
 
         self.ball_image = cv2.imread(ball_image_path, cv2.IMREAD_UNCHANGED)
         self.ball_image = cv2.resize(self.ball_image,
-                                     (self.radius * 2, self.radius * 2))  # Подгоняем размер изображения
+                                     (self.radius * 2, self.radius * 2))  
 
     def touch_platform(self, ball_pos):
         platform_pos = self.platform.get_position()
